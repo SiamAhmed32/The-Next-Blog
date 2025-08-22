@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
+import MobileNav from "@/components/MobileNav";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
             <div className="flex flex-col lg:flex-row">{children}</div>
           </div>
         </section>
+        <MobileNav />
       </body>
     </html>
   );

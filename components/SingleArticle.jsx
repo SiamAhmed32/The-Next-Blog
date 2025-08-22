@@ -5,14 +5,14 @@ import { generateExcerpt } from "@/lib/generateExcerpt";
 import { slugify } from "@/lib/data";
 
 const SingleArticle = ({ article }) => {
-    const excerpt = generateExcerpt(article.description, 180);
-    const slugifiedTitle = slugify(article.title)
+  const excerpt = generateExcerpt(article.description, 180);
+  const slugifiedTitle = slugify(article.title);
   return (
     <article className="mb-10 pb-10 border-b border-gray-200">
       <div className="flex items-center mb-4">
         <Image
           src={article.author.avatar}
-          alt={article.author.name} 
+          alt={article.author.name}
           width={24}
           height={24}
           className="rounded-full mr-2"
@@ -25,10 +25,7 @@ const SingleArticle = ({ article }) => {
       >
         {article.title}
       </Link>
-      <p className="text-gray-700 mb-4">
-        {excerpt}
-        
-      </p>
+      <p className="text-gray-700 mb-4">{excerpt}</p>
       <div className="flex justify-between items-center">
         <div className="flex items-center text-gray-500 text-sm">
           <span>{article.date}</span>

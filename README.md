@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Next Blog
+
+A fully-featured, server-rendered blog platform built with Next.js 14 and Tailwind CSS. This project demonstrates advanced Next.js concepts like server-side filtering and sorting, dynamic routing, and Client/Server component architecture.
+
+## Features
+
+  - **Server-Side Rendering (SSR):** All pages are rendered on the server for optimal performance and SEO.
+  - **Dynamic Routing:** Individual blog post pages are dynamically generated based on a URL slug.
+  - **Server-Side Filtering:** Filter articles by a single or multiple categories. All filtering logic is handled on the server by reading URL search parameters.
+  - **Server-Side Sorting:** Sort articles by date (latest or oldest). Sorting logic also runs on the server and works in combination with active filters.
+  - **Not Found Handling:** A custom "Not Found" page is shown for invalid blog slugs.
+  - **Dynamic Recommendations:** The blog details page suggests other relevant articles from the same category. If none exist, it shows the latest articles as a fallback.
+  - **Responsive Design:** A clean, mobile-first design that works on all screen sizes, including a mobile-specific navigation bar.
+
+-----
+
+## Tech Stack
+
+  - **Framework:** Next.js 14 (App Router)
+  - **Styling:** Tailwind CSS (with `@tailwindcss/typography` plugin)
+  - **Language:** JavaScript
+
+-----
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure you have Node.js (version 18.17 or later) installed on your machine.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd your-repo-name
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+5.  Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) with your browser to see the result.
 
-## Learn More
+-----
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License.
