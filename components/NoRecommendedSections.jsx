@@ -1,9 +1,10 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const NoRecommendations = () => {
   return (
     <section className="bg-gray-50 py-12 mt-12 text-center">
       <div className="container mx-auto px-4 max-w-4xl">
+        {/* An icon to add some visual flair */}
         <svg
           className="mx-auto h-12 w-12 text-gray-400"
           fill="none"
@@ -20,7 +21,7 @@ const NoRecommendations = () => {
           />
         </svg>
         <h3 className="mt-2 text-xl font-bold text-gray-900">
-          You've Read It All!
+          You&apos;ve Read It All!
         </h3>
         <p className="mt-2 text-md text-gray-600">
           There are no more recommended articles in this category.

@@ -5,7 +5,7 @@ export default function NotFound() {
     <div className="text-center py-10">
       <h2 className="text-3xl font-bold mb-4">Post Not Found</h2>
       <p className="text-gray-600">
-        Sorry, we couldn't find the blog post you were looking for.
+        Sorry, we couldn&apos;t find the blog post you were looking for.
       </p>
       <Link
         href="/"
